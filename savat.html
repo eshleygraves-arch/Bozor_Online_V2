@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bozor Online - Savat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigatsiya menyusi -->
+    <header>
+        <div class="logo">Bozor<span>Online</span></div>
+        <nav>
+            <a href="index.html">Bosh sahifa</a>
+            <a href="mahsulotlar.html">Mahsulotlar</a>
+            <a href="filtr.html">Saralash</a>
+            <a href="savat.html" class="active">Savat</a>
+            <a href="tex-yordam.html">Tex-yordam</a>
+        </nav>
+    </header>
+
+    <!-- Sahifa sarlavhasi -->
+    <section class="page-title">
+        <h2>Sizning Savatingiz</h2>
+        <p>Tanlangan mahsulotlarni tekshiring va buyurtmani rasmiylashtiring</p>
+    </section>
+
+    <!-- Savat asosiy qismi -->
+    <main class="cart-container">
+        
+        <!-- Chap tomonda: Tanlangan mahsulotlar ro'yxati -->
+        <section class="cart-items">
+            
+            <!-- 1-Mahsulot savatda -->
+            <div class="cart-item">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR3JazuaOrjAZLjn5FLca9fT0iIauPWbGxu5_VkbGUdsuvVG4borSzpSFDr8fZn67opKuBIWje7kLbLHWE1kdnIo86CvQqX1Vxq4Zp6nEJVgfgUXxOWO2J5ASzXWRlDMjpqS-uZ3ZR-7KI&usqp=CAc" alt="Futbolka">
+                <div class="item-details">
+                    <h4>Oq Erkaklar Futbolkasi</h4>
+                    <p>📍 Qo'qon kiyim bozori</p>
+                    <p>🌿 100% Sof Paxta</p>
+                </div>
+                <div class="item-price">120,000 so'm</div>
+                <button class="remove-btn">❌</button>
+            </div>
+
+            <!-- 2-Mahsulot savatda -->
+            <div class="cart-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwNK2l_1D72qgkP92XQQyyGCplwPPD8dMNtfZPb3w1wA&s" alt="Shim">
+                <div class="item-details">
+                    <h4>Moviy Djinsi Shim</h4>
+                    <p>📍 Abu Saxiy bozori</p>
+                    <p>🌿 Qalin Djinsi matosi</p>
+                </div>
+                <div class="item-price">280,000 so'm</div>
+                <button class="remove-btn">❌</button>
+            </div>
+
+        </section>
+
+        <!-- O'ng tomonda: To'lov va Karta ma'lumotlari -->
+        <aside class="checkout-summary">
+            <h3>Buyurtma hisobi</h3>
+            
+            <div class="summary-row">
+                <span>Mahsulotlar (2 ta):</span>
+                <span>400,000 so'm</span>
+            </div>
+            <div class="summary-row">
+                <span>Yetkazib berish:</span>
+                <span class="free-delivery">Bepul</span>
+            </div>
+            <hr>
+            <div class="summary-row total-row">
+                <span>Obshiy narx:</span>
+                <span>400,000 so'm</span>
+            </div>
+
+            <!-- To'lov formasi -->
+            <form class="payment-form" onsubmit="alert('To\'lov muvaffaqiyatli amalga oshirildi!')">
+                <h4>To'lov ma'lumotlari</h4>
+                
+                <div class="input-group">
+                    <label for="card-number">Karta raqami</label>
+                    <input type="text" id="card-number" placeholder="8600 0000 0000 0000" maxlength="19" required>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="card-date">Amal qilish muddati</label>
+                        <input type="text" id="card-date" placeholder="MM/YY" maxlength="5" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="card-cvc">CVC/CVV</label>
+                        <input type="password" id="card-cvc" placeholder="***" maxlength="3">
+                    </div>
+                </div>
+
+                <button type="submit" class="checkout-btn">To'lovni amalga oshirish 💳</button>
+            </form>
+        </aside>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Bozor Online. Zamonaviy onlayn bozor platformasi.</p>
+    </footer>
+
+</body>
+</html>

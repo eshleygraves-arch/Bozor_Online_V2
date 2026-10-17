@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bozor Online - Texnik yordam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigatsiya menyusi -->
+    <header>
+        <div class="logo">Bozor<span>Online</span></div>
+        <nav>
+            <a href="index.html">Bosh sahifa</a>
+            <a href="mahsulotlar.html">Mahsulotlar</a>
+            <a href="filtr.html">Saralash</a>
+            <a href="savat.html">Savat</a>
+            <a href="tex-yordam.html" class="active">Tex-yordam</a>
+        </nav>
+    </header>
+
+    <!-- Sahifa sarlavhasi -->
+    <section class="page-title">
+        <h2>Texnik yordam markazi</h2>
+        <p>Muammo yoki savollaringiz bormi? Bizga yozing, tez fursatda yordam beramiz</p>
+    </section>
+
+    <!-- Tex-yordam asosiy qismi -->
+    <main class="support-container">
+        
+        <!-- Chap tomonda: Tezkor savol-javoblar (FAQ) bloki -->
+        <section class="faq-box">
+            <h3>Tez-tez beriladigan savollar</h3>
+            
+            <div class="faq-item">
+                <h4>❓ Buyurtma qancha vaqtda yetib boradi?</h4>
+                <p>Toshkent shahri bo'ylab 2 soat ichida, viloyatlarga esa 24 soat ichida yetkazib beriladi.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>❓ Mahsulot sifati to'g'ri kelmasa qaytarish mumkinmi?</h4>
+                <p>Ha, agar mahsulot tarkibi yoki o'lchami saytda yozilganiga mos kelmasa, 2 kun ichida bepul qaytarib bera olasiz.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>❓ To'lov xavfsizligi kafolatlanganmi?</h4>
+                <p>Albatta, barcha karta ma'lumotlari bankning xavfsiz shifrlangan tizimi (SSL) orqali o'tadi va saqlanib qolmaydi.</p>
+            </div>
+        </section>
+
+        <!-- O'ng tomonda: Muammoni yozish formasi -->
+        <section class="support-form-box">
+            <h3>Muammo haqida xabar berish</h3>
+            <p class="form-subtitle">Quyidagi formani to'ldiring, operatorlarimiz siz bilan bog'lanishadi.</p>
+
+            <form class="support-form" onsubmit="alert('Xabaringiz qabul qilindi! Tez orada operatorlarimiz bog\'lanishadi.')">
+                
+                <div class="input-group">
+                    <label for="user-name">Ismingiz va familiyangiz</label>
+                    <input type="text" id="user-name" placeholder="Masalan: Dilshodbek" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="user-phone">Telefon raqamingiz</label>
+                    <input type="tel" id="user-phone" placeholder="+998 90 123 45 67" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="problem-type">Muammo turi</label>
+                    <select id="problem-type">
+                        <option value="delivery">Yetkazib berish muammosi</option>
+                        <option value="payment">To'lov va karta muammosi</option>
+                        <option value="quality">Mahsulot sifati va tarkibi</option>
+                        <option value="other">Boshqa muammolar</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="user-message">Muammoning batafsil tavsifi</label>
+                    <textarea id="user-message" rows="5" placeholder="Muammoingizni shu yerga batafsil yozing..." required></textarea>
+                </div>
+
+                <button type="submit" class="send-btn">Xabarni yuborish ✉️</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Bozor Online. Zamonaviy onlayn bozor platformasi.</p>
+    </footer>
+
+</body>
+</html>
